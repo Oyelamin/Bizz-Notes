@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".AddEditNoteActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW NOTE"
+        android:textColor="@color/black_shade_2"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:id="@+id/AddingEditTextHeader"
+        android:paddingTop="30dp"
+        android:paddingBottom="40dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/idEditNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Note Title"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="20dp"
+        android:layout_below="@id/AddingEditTextHeader"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/idEditNoteDescription"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Enter Note Description"
+        android:layout_margin="20dp"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/idEditNoteTitle"
+        android:singleLine="false"
+
+
+        />
+
+    <Button
+        android:id="@+id/idBtnAddUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="SUBMIT"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button_back"
+         />
+
+
+</RelativeLayout>
